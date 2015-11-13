@@ -4,8 +4,10 @@ var app = express();
 
 //Static Folder
 app.use(express.static(__dirname+'/static'));
-
-var server = app.listen(1991);
+var port = process.env.PORT || 1991;
+var server = app.listen(port, function(){
+	console.log("Hello at 1991");
+});
 var io = require('socket.io').listen(server);
 
 var users = [];
