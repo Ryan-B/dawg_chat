@@ -1,0 +1,59 @@
+*{
+	margin: 5px;
+	
+}
+div.messages{
+	width: 47%;
+	height:400px;
+	border: 1px solid black;
+	display: inline-block;
+	overflow: scroll;
+	/*opacity: 0.15;*/
+    background-image: url('nate.jpg');
+    background-repeat: no-repeat;
+    /*background-position: 50% 0;*/
+    /*-ms-background-size: cover;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    background-size: cover;
+    z-index: -50;*/
+
+}
+div.users{
+	width: 100px;
+	height: 400px;
+	border: 1px solid black;
+	display: inline-block;
+	vertical-align: top;
+	overflow: scroll;
+}
+#message{
+	display: inline-block;
+	width: 400px;
+}
+#submit{
+	display: inline-block;
+}
+h1{
+	color: purple;
+	font-family: copperplate;
+	display: block;
+	margin-left: 10%;
+	
+}
+h3{
+	color: gold;
+	background-color: purple;
+	font-family: copperplate;
+	display: inline-block;
+	margin-left: 5%;
+	
+}
+
+
+h4{
+	background-color: gold;
+	color: purple;
+	display: inline-block;
+}
