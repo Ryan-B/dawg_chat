@@ -12,12 +12,12 @@ div.messages{
     background-image: url('nate.jpg');
     background-repeat: no-repeat;
     /*background-position: 50% 0;*/
-    /*-ms-background-size: cover;
-    -o-background-size: cover;
-    -moz-background-size: cover;
-    -webkit-background-size: cover;
+   /* -ms-background-size: cover;*/
     background-size: cover;
-    z-index: -50;*/
+   /* -moz-background-size: cover;
+    -webkit-background-size: cover;
+    background-size: cover;*/
+    /*z-index: -50;*/
 
 }
 div.users{
