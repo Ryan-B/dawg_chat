@@ -28,7 +28,7 @@ io.sockets.on('connection', function(socket) {
 		for(index in users){
 			if(users[index].socket_id === socket.id){
 				io.emit('addMessage', {
-					message: "<p class='p_chat'>"+users[index].name + ": "+ data.message+"</p>"
+					message: "<p>"+users[index].name + ": "+"<span>"+ data.message+"</span></p>"
 				})
 				break;
 			}
