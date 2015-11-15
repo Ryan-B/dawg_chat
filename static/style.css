@@ -7,9 +7,9 @@ div.messages{
 	height:400px;
 	border: 1px solid black;
 	display: inline-block;
-	overflow: scroll;
+	overflow: auto;
 	/*opacity: 0.15;*/
-    background-image: url('jake.jpg');
+    background-image: url('kam.jpg');
     background-repeat: no-repeat;
     /*background-position: 50% 0;*/
    /* -ms-background-size: cover;*/
@@ -36,27 +36,27 @@ div.users{
 	display: inline-block;
 }
 h1{
-	color: purple;
+	color: dodgerblue;
 	font-family: copperplate;
 	display: block;
 	margin-left: 10%;
 	
 }
 h3{
-	color: gold;
-	background-color: purple;
+	color: lime;
+	background-color: dodgerblue;
 	font-family: copperplate;
 	display: inline-block;
-	margin-left: 5%;
+	margin-left: 14%;
 	
 }
 span{
 	font-size: 16pt;
-	color: purple;
+	color: dodgerblue;
 }
 
 h4{
-	background-color: gold;
-	color: purple;
+	background-color: lime;
+	color: dodgerblue;
 	display: inline-block;
 }
