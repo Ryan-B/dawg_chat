@@ -35,7 +35,7 @@
 
 		socket.on('addMessage', function(data){
 			console.log("MESSAGE: ", data);
-			$('div.messages').append(data.message);
+			$('div.messages').prepend(data.message);
 		})
 		$(document).on('submit', 'form', function(){
 			socket.emit('newMessage', {
