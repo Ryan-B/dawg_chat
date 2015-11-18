@@ -11,10 +11,11 @@ var server = app.listen(port, function(){
 var io = require('socket.io').listen(server);
 
 var users = [];
+var messages = [];
 
 io.sockets.on('connection', function(socket) {
 	console.log("Socket connected with id: ", socket.id);
-
+	
 	socket.on('newUser', function(data){
 		users.push({ 
 			name: data.name, 
@@ -22,17 +23,16 @@ io.sockets.on('connection', function(socket) {
 		})
 		// console.log(users);
 		io.emit('updateUserList', users);
+		io.emit('updateMessageList', messages);
+
 	});
 
 	socket.on('newMessage', function(data){
-		for(index in users){
-			if(users[index].socket_id === socket.id){
-				io.emit('addMessage', {
-					message: "<p>"+users[index].name + ": "+"<span>"+ data.message+"</span></p>"
-				})
-				break;
-			}
+		messages.push("<p>"+data.name+": "+data.message+"</p>")
+		if(messages.length > 50){
+			messages.splice(0,5);
 		}
+		io.emit('updateMessageList', messages);
 	})
 			
 

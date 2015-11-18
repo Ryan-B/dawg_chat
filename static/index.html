@@ -18,30 +18,33 @@
 	<script type="text/javascript">
 		socket = io.connect();
 
-		var myName;
-		while(!myName || myName.length < 1){
-			myName = prompt("Please enter your name");
+		var name;
+		while(!name || name.length < 1){
+			name = prompt("Please enter your name");
 		}
 
-		socket.emit('newUser', {name: myName});
+		socket.emit('newUser', {name: name});
 		socket.on('updateUserList', function(users){
 			console.log(users);
-			$('div.users').html('')
-			$(users).each(function(index){
-				$('div.users').append("<h4>"+users[index].name+"</h4>")
+			$('div.users').html('');
+			$(users).each(function(index, user){
+				$('div.users').append("<h4>"+user.name+"</h4>")
 				console.log(users[index]);
 			})
 		})
 
-		socket.on('addMessage', function(data){
-			console.log("MESSAGE: ", data);
-			$('div.messages').prepend(data.message);
+		socket.on('updateMessageList', function(messages){
+			$('div.messages').html('');
+			$(messages).each(function(index, message){
+				$('div.messages').prepend(message);
+				
+			})
 		})
 		$(document).on('submit', 'form', function(){
 			socket.emit('newMessage', {
-				message: $('#message').val()
+				message: $('#message').val(), name: name
 			})
-			$('#message').val("");
+			
 			return false;
 		})
 		
