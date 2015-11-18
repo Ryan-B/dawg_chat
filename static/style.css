@@ -9,7 +9,7 @@ div.messages{
 	display: inline-block;
 	overflow: scroll;
 	/*opacity: 0.15;*/
-    background-image: url('kam.jpg');
+    background-image: url('ado.jpg');
     background-repeat: no-repeat;
     /*background-position: 50% 0;*/
    /* -ms-background-size: cover;*/
@@ -36,18 +36,18 @@ div.users{
 	display: inline-block;
 }
 h1{
-	color: dodgerblue;
-	font-family: copperplate;
+	color: darkkhaki;
+	font-family: Copperplate Gothic Light;
 	display: block;
 	margin-left: 15%;
 	
 }
 h3{
-	color: lime;
-	background-color: dodgerblue;
-	font-family: copperplate;
+	color: darkslateblue;
+	background-color: ;
+	font-family: Copperplate Gothic Light;
 	display: inline-block;
-	margin-left: 18%;
+	margin-left: 17%;
 	
 }
 span{
@@ -56,7 +56,7 @@ span{
 }
 
 h4{
-	background-color: lime;
-	color: dodgerblue;
+	background-color: khaki;
+	color: darkslateblue;
 	display: inline-block;
 }
