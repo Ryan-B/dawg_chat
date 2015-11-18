@@ -4,7 +4,7 @@
 }
 div.messages{
 	width: 47%;
-	height:400px;
+	height:500px;
 	border: 1px solid black;
 	display: inline-block;
 	overflow: scroll;
@@ -22,7 +22,7 @@ div.messages{
 }
 div.users{
 	width: 100px;
-	height: 400px;
+	height: 500px;
 	border: 1px solid black;
 	display: inline-block;
 	vertical-align: top;
