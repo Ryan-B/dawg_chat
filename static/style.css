@@ -4,12 +4,12 @@
 }
 div.messages{
 	width: 47%;
-	height:500px;
+	height:580px;
 	border: 1px solid black;
 	display: inline-block;
 	overflow: scroll;
 	/*opacity: 0.15;*/
-    background-image: url('ado.jpg');
+    background-image: url('shirt.jpg');
     background-repeat: no-repeat;
     /*background-position: 50% 0;*/
    /* -ms-background-size: cover;*/
@@ -39,7 +39,8 @@ h1{
 	color: darkkhaki;
 	font-family: Copperplate Gothic Light;
 	display: block;
-	margin-left: 15%;
+	margin-left: 1%;
+	font-size: 40pt;
 	
 }
 h3{
@@ -59,4 +60,8 @@ h4{
 	background-color: khaki;
 	color: darkslateblue;
 	display: inline-block;
+}
+p{
+	font-size: 20pt ;
+	color: white;
 }

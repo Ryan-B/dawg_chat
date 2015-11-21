@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Sunday Night Chat</title>
+	<title>Dawg Chat</title>
 	<!-- Latest compiled and minified CSS -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
 
@@ -36,7 +36,7 @@
 		socket.on('updateMessageList', function(messages){
 			$('div.messages').html('');
 			$(messages).each(function(index, message){
-				$('div.messages').prepend(message);
+				$('div.messages').prepend("<p>"+message+"</p>");
 				
 			})
 		})
@@ -53,17 +53,17 @@
 </head>
 <body>
 	<div id="header">
-		<h1>Ado's Birthday Chat</h1>
-		<h3><i>"A Good Friend of Mine"</i></h3>
+		<h1 id="title">SPANK THE DIRTY BEAVERS</h1>
+		
 	</div>
-	<div id="main">
-		<h5>Logged In</h5><div class="users"></div>
-		<div class="messages"></div>
-	<div>
 	<form>
 		<input type="text" id="message" placeholder="chat it up">
 		<input type="submit" value="submit" id="submit">
 	</form>
+	<div id="main">
+		<h5>Logged In</h5><div class="users"></div>
+		<div class="messages"></div>
+	<div>
 </body>
 </html>
 		
